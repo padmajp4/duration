@@ -26,7 +26,9 @@ export function parseDuration(input: string): number {
 
   PARSE_RE.lastIndex = 0
   for (const match of str.matchAll(PARSE_RE)) {
-    total += parseFloat(match[1]) * UNITS[match[2]]
+    const value = parseFloat(match[1]) * UNITS[match[2]]
+    if (!Number.isFinite(value)) throw new DurationError(input)
+    total += value
     matched = true
   }
 
