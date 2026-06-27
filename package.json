@@ -1,6 +1,6 @@
 {
   "name": "@padmaj/duration",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Parse and format duration strings. '2h30m' ↔ 9000000ms. Zero dependencies. TypeScript-first.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -12,7 +12,9 @@
       "require": "./dist/index.js"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/padmajp4/duration.git"
@@ -23,7 +25,14 @@
     "test:watch": "vitest",
     "prepublishOnly": "npm run build && npm test"
   },
-  "keywords": ["duration", "time", "parse", "format", "ms", "human-readable"],
+  "keywords": [
+    "duration",
+    "time",
+    "parse",
+    "format",
+    "ms",
+    "human-readable"
+  ],
   "author": "Padmaj P Kumar",
   "license": "MIT",
   "devDependencies": {
