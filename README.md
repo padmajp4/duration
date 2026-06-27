@@ -77,6 +77,11 @@ try {
 }
 ```
 
+## Notes
+
+- Input strings longer than 100 characters are rejected with a `DurationError` to prevent abuse.
+- `formatDuration` throws `RangeError` for negative, `NaN`, or `Infinity` values.
+
 ## License
 
 MIT

@@ -19,6 +19,7 @@ export class DurationError extends Error {
 export function parseDuration(input: string): number {
   const str = input.trim()
   if (!str) throw new DurationError(input)
+  if (str.length > 100) throw new DurationError(input)
 
   let total = 0
   let matched = false
