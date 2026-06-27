@@ -1,6 +1,6 @@
 {
   "name": "@padmaj/duration",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Parse and format duration strings. '2h30m' ↔ 9000000ms. Zero dependencies. TypeScript-first.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
